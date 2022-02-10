@@ -1,0 +1,26 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+
+class DIO
+{
+    public static void Main(string[] args)
+    {
+        int A = int.Parse(Console.ReadLine());
+
+        for (int i = 0; i < A; i++)
+        {
+            List<string> B = new List<String>(Console.ReadLine().Split(' '));
+            List<string> C = B.Distinct().ToList();
+
+            C.Sort();
+
+            foreach (string D in C)
+            {
+                Console.Write($"{D} ");
+            }
+
+            Console.WriteLine(" ");
+        }
+    }
+}
